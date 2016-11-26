@@ -46,7 +46,7 @@ oncotate = function(maflite, header = FALSE,basename = NULL){
     rec = anno[i]
 
     #make an url for oncotator api.
-    rec.url = paste('http://www.broadinstitute.org/oncotator/mutation',rec,sep = '/')
+    rec.url = paste('http://portals.broadinstitute.org/oncotator/mutation',rec,sep = '/')
 
     #use rjason to query oncotator.
     annot = rjson::fromJSON(file = rec.url)
